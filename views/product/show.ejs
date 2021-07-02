@@ -29,7 +29,8 @@
         <div><a href="/product">Back to all items</a></div>
         <div><a href="/product/<%=items._id%>/edit">Edit product</a></div>
     </section>
-    <form action="/product/<%=items.id%>?_method=DELETE" method="POST">
+    //"/product/<%=items.id%>" is replaced by "/product/<%=items._id%>" which is the correct route
+    <form action="/product/<%=items._id%>?_method=DELETE" method="POST">
         <button>Delete product</button>
     </form>
 
